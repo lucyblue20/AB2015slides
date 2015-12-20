@@ -46,4 +46,4 @@ head(totalAbs)
 ```
 Thank you for your interest!
 ---
- publish(user = "lucyblue20", repo = "AB2015slides")
+
