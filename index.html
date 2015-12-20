@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reef Check California Abalone Surveys of the Northern California Coast</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Reef Check California Abalone Surveys of the Northern California Coast">
+  <meta name="author" content="LNewman">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/leaflet/external/leaflet.css"></link>
+<link rel=stylesheet href="libraries/widgets/leaflet/external/leaflet-rCharts.css"></link>
+<link rel=stylesheet href="libraries/widgets/leaflet/external/legend.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="libraries/widgets/leaflet/external/leaflet.js"></script>
+<script src="libraries/widgets/leaflet/external/leaflet-providers.js"></script>
+<script src="libraries/widgets/leaflet/external/Control.FullScreen.js"></script>
+
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Reef Check California Abalone Surveys of the Northern California Coast</h1>
+    <h2>Total Counts and Average Sizes</h2>
+    <p>LNewman<br/>Developing Data Products Project</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Reef Check Foundation is an international organization of that exists to help preserve the worlds ocenas through education, research and conservation.  It has groups in over 90 countries and a group in California, USA that is dedicated to helping protect the rocky reefs of the California Coast. <a href="http://www.reefcheck.org/">http://www.reefcheck.org/</a>  <a href="http://www.reefcheck.org/california/ca-overview">http://www.reefcheck.org/california/ca-overview</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Introduction cont&#39;d</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Citizen volunteers are trained and recertified each year to take part in underwater surveys in which key species of fish, abalone, algae and the structure of the rocky reef are counted and recorded.  The data are uploaded to the Reef Check website and made available to academic scientists, government departments, and the public.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Shiny app for Abalone data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>As part of the Coursera Data Products course, a Shiny app was developed to visualize the abalone data for survey years 2007-2011.  The app was designed for the public and Reef Check divers to visualize the data that they have collected and identify trends in the data. The app summarises the data and displays a plot with total counts by species and a table of average sizes per species for a user selected survey site.  A map is displayed to help the user identify survey sites to select from a drop down menu.</p>
+
+<p>The app can be accessed here: <a href="https://lucyblue20.shinyapps.io/AB2015">https://lucyblue20.shinyapps.io/AB2015</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Data sample</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Below is a sample of the data used in the shiny app:</p>
+
+<pre><code class="r">totalAbs &lt;- readRDS(&quot;data/totalAbs.rds&quot;)
+head(totalAbs)
+</code></pre>
+
+<pre><code>##       site year         Species total
+## 1 Aquarium 2007    flat abalone     2
+## 2 Aquarium 2007     red abalone     6
+## 3 Aquarium 2008     red abalone     5
+## 4 Aquarium 2008 unknown abalone     1
+## 5 Aquarium 2009    flat abalone     1
+## 6 Aquarium 2009     red abalone    11
+</code></pre>
+
+<h2>Thank you for your interest!</h2>
+
+<p>publish(user = &quot;lucyblue20&quot;, repo = &quot;AB2015slides&quot;)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Introduction cont&#39;d'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Shiny app for Abalone data'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Data sample'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

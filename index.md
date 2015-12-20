@@ -1,0 +1,58 @@
+---
+title       : Reef Check California Abalone Surveys of the Northern California Coast
+subtitle    : Total Counts and Average Sizes
+author      : LNewman 
+job         : Developing Data Products Project
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+ext_widgets : {rCharts: libraries/leaflet}
+---
+
+## Introduction
+
+Reef Check Foundation is an international organization of that exists to help preserve the worlds ocenas through education, research and conservation.  It has groups in over 90 countries and a group in California, USA that is dedicated to helping protect the rocky reefs of the California Coast. http://www.reefcheck.org/  http://www.reefcheck.org/california/ca-overview
+
+
+--- .class #id 
+
+## Introduction cont'd
+
+Citizen volunteers are trained and recertified each year to take part in underwater surveys in which key species of fish, abalone, algae and the structure of the rocky reef are counted and recorded.  The data are uploaded to the Reef Check website and made available to academic scientists, government departments, and the public.
+
+--- 
+
+## Shiny app for Abalone data
+
+As part of the Coursera Data Products course, a Shiny app was developed to visualize the abalone data for survey years 2007-2011.  The app was designed for the public and Reef Check divers to visualize the data that they have collected and identify trends in the data. The app summarises the data and displays a plot with total counts by species and a table of average sizes per species for a user selected survey site.  A map is displayed to help the user identify survey sites to select from a drop down menu.
+
+The app can be accessed here: https://lucyblue20.shinyapps.io/AB2015
+
+---
+
+
+## Data sample
+
+Below is a sample of the data used in the shiny app:
+
+
+```r
+totalAbs <- readRDS("data/totalAbs.rds")
+head(totalAbs)
+```
+
+```
+##       site year         Species total
+## 1 Aquarium 2007    flat abalone     2
+## 2 Aquarium 2007     red abalone     6
+## 3 Aquarium 2008     red abalone     5
+## 4 Aquarium 2008 unknown abalone     1
+## 5 Aquarium 2009    flat abalone     1
+## 6 Aquarium 2009     red abalone    11
+```
+Thank you for your interest!
+---
+ publish(user = "lucyblue20", repo = "AB2015slides")
